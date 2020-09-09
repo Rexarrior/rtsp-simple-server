@@ -18,10 +18,10 @@ import (
 const (
 	clientCheckStreamInterval    = 5 * time.Second
 	clientReceiverReportInterval = 10 * time.Second
-	clientTCPReadBufferSize      = 512
-	clientTCPWriteBufferSize     = 512
-	clientUDPReadBufferSize      = 512
-	clientUDPWriteBufferSize     = 512
+	clientTCPReadBufferSize      = 4 * 1024
+	clientTCPWriteBufferSize     = 4 * 1024
+	clientUDPReadBufferSize      = 2048
+	clientUDPWriteBufferSize     = 128 * 1024
 )
 
 type clientDescribeReq struct {
