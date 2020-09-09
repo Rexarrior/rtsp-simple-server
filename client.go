@@ -20,8 +20,8 @@ const (
 	clientReceiverReportInterval = 10 * time.Second
 	clientTCPReadBufferSize      = 128 * 1024
 	clientTCPWriteBufferSize     = 128 * 1024
-	clientUDPReadBufferSize      = 512
-	clientUDPWriteBufferSize     = 128 * 1024
+	clientUDPReadBufferSize      = 8096
+	clientUDPWriteBufferSize     = 512
 )
 
 type clientDescribeReq struct {
