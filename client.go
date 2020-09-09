@@ -16,8 +16,8 @@ import (
 )
 
 const (
-	clientCheckStreamInterval    = 5 * time.Second
-	clientReceiverReportInterval = 10 * time.Second
+	clientCheckStreamInterval    = 1 * time.Second
+	clientReceiverReportInterval = 2 * time.Second
 	clientTCPReadBufferSize      = 128 * 1024
 	clientTCPWriteBufferSize     = 128 * 1024
 	clientUDPReadBufferSize      = 2048
